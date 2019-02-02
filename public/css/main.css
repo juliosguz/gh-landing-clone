@@ -8,18 +8,34 @@ body {
 
 .page__header {
   background-color: #24292e;
-  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
 }
 
-.page__logo {
+.page__action {
   color: white;
   font-size: 32px;
   text-decoration: none;
 }
 
+.page__button {
+  color: white;
+  background-color: #2ebc4f;
+  border-radius: 5px;
+  border: none;
+  padding: 20px 32px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page__buton--full-width {
+  width: 100%;
+}
+
 .landing__welcome {
   background-color: #2b3137;
-  padding: 64px 0;
+  padding: 64px 45px;
 }
 
 .landing__welcome h1 {
@@ -27,20 +43,59 @@ body {
   font-size: 48px;
   font-weight: 500;
   margin: 0;
+  margin-bottom: 24px;
   text-align: center;
 }
 
-.landing__welcome p {
+.landing__welcome p a:hover {
+  border-bottom-color: white;
+}
+
+.welcome__text {
   color: rgba(255, 255, 255, 0.6);
   font-size: 21px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 24px;
   text-align: center;
 }
 
-.landing__welcome a {
+.welcome__text a {
   color: white;
-  background-color: #2ebc4f;
-  padding: 20px 32px;
-  font-weight: 500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
+}
+
+.welcome__form {
+  background-color: white;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 24px;
+  width: 277px;
+}
+
+.welcome__input label,
+.welcome__input input {
+  display: block;
+}
+
+.welcome__input label {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.welcome__input input {
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 193, 193);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.welcome__hint {
+  color: gray;
+  font-size: 12px;
+  text-align: center;
 }
 
