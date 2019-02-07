@@ -20,51 +20,57 @@
       </a>
     </header>
     <div class="landing">
-      <section class="landing__welcome welcome">
-        <h1>
-          Built for developers
-        </h1>
-        <p class="welcome__text">
-          GitHub is a development platform inspired by the way you work. From <a href="">open source</a> to <a href="">business</a>, you can host and review code, manage projects, and build software alongside 31 million developers.
-        </p>
-        <div class="welcome__form">
-          <form action="">
-            <div class="welcome__input" >
-              <label for="username">Username</label>
-              <input
-                placeholder="Pick a username"
-                type="username"
-                name="username"
-                id="username">
+      <section class="landing__welcome">
+        <div class="welcome">
+          <div class="welcome__text-wrapper">
+              <h1>
+                Built for developers
+              </h1>
+              <p class="welcome__text">
+                GitHub is a development platform inspired by the way you work. From <a href="">open source</a> to <a href="">business</a>, you can host and review code, manage projects, and build software alongside 31 million developers.
+              </p>
             </div>
-            <div class="welcome__input" >
-              <label for="email">Email</label>
-              <input
-                placeholder="you@example.com"
-                type="email"
-                name="email"
-                id="email">
+            <div class="welcome__form-wrapper">
+              <div class="welcome__form">
+                <form action="">
+                  <div class="welcome__input" >
+                    <label for="username">Username</label>
+                    <input
+                      placeholder="Pick a username"
+                      type="username"
+                      name="username"
+                      id="username">
+                  </div>
+                  <div class="welcome__input" >
+                    <label for="email">Email</label>
+                    <input
+                      placeholder="you@example.com"
+                      type="email"
+                      name="email"
+                      id="email">
+                  </div>
+                  <div class="welcome__input" >
+                    <label for="password">Password</label>
+                    <input
+                      placeholder="Create a password"
+                      type="password"
+                      name="password"
+                      id="password">
+                      <p class="welcome__hint">
+                        Make sure it's more than 15 characters OR at least 8 characters including a number and a lowercase letter. Learn more.
+                      </p>
+                  </div>
+                  <button
+                    type="submit"
+                    class="page__button page__buton--full-width">
+                    Sign up for GitHub
+                  </button>
+                  <p class="welcome__hint">
+                    By clicking “Sign up for GitHub”, you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails.
+                  </p>
+                </form>
+              </div>  
             </div>
-            <div class="welcome__input" >
-              <label for="password">Password</label>
-              <input
-                placeholder="Create a password"
-                type="password"
-                name="password"
-                id="password">
-                <p class="welcome__hint">
-                  Make sure it's more than 15 characters OR at least 8 characters including a number and a lowercase letter. Learn more.
-                </p>
-            </div>
-            <button
-              type="submit"
-              class="page__button page__buton--full-width">
-              Sign up for GitHub
-            </button>
-            <p class="welcome__hint">
-              By clicking “Sign up for GitHub”, you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails.
-            </p>
-          </form>
         </div>
       </section>
     </div>

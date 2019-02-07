@@ -35,20 +35,34 @@ body {
 
 .landing__welcome {
   background-color: #2b3137;
-  padding: 64px 45px;
+  padding: 64px 15px;
 }
 
-.landing__welcome h1 {
+.landing__welcome p a:hover {
+  border-bottom-color: white;
+}
+
+.welcome {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome h1 {
   color: white;
   font-size: 48px;
   font-weight: 500;
   margin: 0;
   margin-bottom: 24px;
+}
+
+.welcome__text-wrapper {
+  flex: 1;
   text-align: center;
 }
 
-.landing__welcome p a:hover {
-  border-bottom-color: white;
+.welcome__form-wrapper {
+  flex: 1;
 }
 
 .welcome__text {
@@ -57,7 +71,6 @@ body {
   line-height: 30px;
   margin: 0;
   margin-bottom: 24px;
-  text-align: center;
 }
 
 .welcome__text a {
@@ -68,10 +81,11 @@ body {
 
 .welcome__form {
   background-color: white;
-  border-radius: 2px;
+  border-radius: 5px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 24px;
-  width: 277px;
+  width: 290px;
 }
 
 .welcome__input label,
@@ -99,3 +113,33 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 900px) {
+  .welcome {
+    flex-direction: row;
+  }
+
+  .welcome h1 {
+    font-size: 64px;
+  }
+
+  .welcome__text-wrapper {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .welcome__form-wrapper {
+    padding: 0 32px;
+  }
+
+  .welcome__form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .welcome {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
